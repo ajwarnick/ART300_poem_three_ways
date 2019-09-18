@@ -2,30 +2,34 @@ body{
     background-color: #FCFAF4;
     padding: 0;
     margin: 0;
+    font-family: 'Yatra One', cursive;
 }
 
 .title{
     position: fixed;
     top: 10px;
-    left: 10px;
-    width: 300px;
+    left: 50px;
+    width: 250px;
+    font-size: 2.5em;
 
 }
 
 .author{
     position: fixed;
     top: 10px;
-    right: 10px;
-    width: 300px;
+    right: 50px;
+    width: 250px;
     text-align: right;
+    font-size: 2.5em;
 }
 
 
 .poem{
     width: 50vw;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 200px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 
@@ -38,6 +42,7 @@ body{
     transform-origin: center;
     transform: rotate(-90deg);
 }
+
 
 .meta-data{
     position: fixed;
@@ -57,6 +62,12 @@ body{
         background: #FDF0FB;
     }
 
+    .poem{
+        height: 90vh;
+        width: 7000px;
+        background-color: white;
+    }
+
 }
  
 /* ----------- TABLETS ----------- */
@@ -64,6 +75,47 @@ body{
 @media only screen and (min-width: 800px) and (max-width: 1280px) {
     body{
         background: #0000FF;
+    }
+
+    .title{
+        top:-8px;
+        left:20px;
+        color:white;
+        width: 300px;
+        font-size: 1.5em
+    }
+
+    .author{
+        top:-8px;
+        right:20px;
+        color:white;
+        width: 300px;
+        font-size: 1.5em
+    }
+
+    .poem{
+        margin-top: 5vh;
+        margin-left: 5vh;
+        margin-bottom: 5vh;
+        border-right: 5vh solid blue;
+        height: 90vh;
+        width: 1700px;
+        background-color: white;
+        color:black;
+    }
+
+    .stanza_1{
+        width:90vw;
+        margin-top:0;
+        float: left;
+    }
+    .stanza_2{
+        width:90vw;
+        margin-top:0;
+        float: left;
+    }
+    .meta-data{
+        color:white;
     }
 }
 
