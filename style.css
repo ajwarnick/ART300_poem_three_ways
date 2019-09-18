@@ -8,9 +8,11 @@ body{
  
  
 @media only screen and (max-width: 800px) {
+
     body{
         background: #FDF0FB;
     }
+
 }
  
 /* ----------- TABLETS ----------- */
