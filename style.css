@@ -60,12 +60,45 @@ body{
 
     body{
         background: #FDF0FB;
+        width: 500vw;
     }
 
     .poem{
         height: 90vh;
         width: 7000px;
         background-color: white;
+    }
+
+    .title{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        float: left;
+        margin:0;
+        padding: 0;
+    }
+
+    .author{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        float: left;
+        margin:0;
+        padding: 0;
+    }
+
+    .poem{
+        display: none;
+    }
+
+    .meta-data{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        float: left;
+        margin:0;
+        padding: 0;
+        bottom:0;
     }
 
 }
@@ -102,17 +135,19 @@ body{
         width: 1700px;
         background-color: white;
         color:black;
+
+        display: flex;
+        align-items: center;
     }
 
     .stanza_1{
-        width:90vw;
-        margin-top:0;
+        width:80vh;
         float: left;
     }
     .stanza_2{
-        width:90vw;
-        margin-top:0;
+        width:80vw;
         float: left;
+
     }
     .meta-data{
         color:white;
