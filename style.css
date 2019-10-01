@@ -59,43 +59,60 @@ body{
 @media only screen and (max-width: 800px) {
 
     body{
-        background: #FDF0FB;
-        width: 500vw;
+        background-color: #FDF0FB;
+        width: 800vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
     }
 
     .poem{
-        height: 90vh;
-        width: 7000px;
-        background-color: white;
+        height: auto;
+        width: 1600px;
+        background-color: #FDF0FB;
+        display: block;
+        margin: 0;
+    }
+    .stanza_1{
+        height: 1000px;
+        width:1000px;
+        float: left;
+    }
+    .stanza_2{
+        height: 1000px;
+        float: left;
     }
 
     .title{
         position: relative;
-        height: 100vh;
+        height: auto;
         width: 100vw;
-        float: left;
+        text-align: center;
         margin:0;
         padding: 0;
+        top: auto;
+        left: auto;
+        right: auto;
     }
 
     .author{
         position: relative;
-        height: 100vh;
+        height: auto;
         width: 100vw;
-        float: left;
+        text-align: center;
+        top: auto;
+        left: auto;
+        right: auto;
         margin:0;
         padding: 0;
     }
 
-    .poem{
-        display: none;
-    }
+    
 
     .meta-data{
         position: relative;
         height: 100vh;
         width: 100vw;
-        float: left;
         margin:0;
         padding: 0;
         bottom:0;
@@ -107,7 +124,7 @@ body{
  
 @media only screen and (min-width: 800px) and (max-width: 1280px) {
     body{
-        background: #0000FF;
+        
     }
 
     .title{
