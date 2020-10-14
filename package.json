@@ -1,11 +1,11 @@
 {
-  "name": "art300-poem-three-ways",
+  "name": "project2-warnick",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html -d public"
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap");
+
+:root {
+  --main-bg-color: rgb(244, 244, 244);
+  --cocacola-red: rgb(244, 0, 0);
+  --main-black: rgb(10, 10, 10);
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cocacola-red);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.meta h1,
+.meta h2,
+.meta h3 {
+  margin: 0;
+  padding-left: 2rem;
+  border-left: 10px solid var(--cocacola-red);
+  color: var(--cocacola-red);
+}
+
+.meta h1 {
+  padding-top: 30vh;
+}
+
+.everything {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr;
+
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.meta {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  min-height: 100vh;
+
+  scroll-snap-align: start;
+}
+
+.container {
+  background-color: var(--cocacola-red);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  min-height: 100vh;
+  color: var(--main-bg-color);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  scroll-snap-align: start;
+}
+
+.last-line {
+  letter-spacing: 0.2em;
+}
+
+.context {
+  padding: 5vh;
+}
+
+.context p {
+  min-height: 5vh;
+  line-height: 1.2rem;
+  max-width: 65ch;
+  font-size: 1rem;
+
+  scroll-snap-align: center;
+}
+
+.translation {
+  padding: 2rem;
+  align-self: end;
+}
+
+/* ----------- TABLETS ----------- */
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  .everything {
+    grid-template-columns: 1fr;
+  }
+
+  .meta {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    min-height: 90vh;
+    border-top: 10px solid var(--cocacola-red);
+    margin-left: 30vw;
+    margin-top: 10vh;
+  }
+
+  .meta h1,
+  .meta h2,
+  .meta h3 {
+    border: none;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .container {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+
+  .context {
+    min-height: 90vh;
+    padding-top: 10vh;
+  }
+
+  .context p {
+    margin: auto;
+  }
+}
+
+/* ----------- SMART PHONES ----------- */
+@media only screen and (max-width: 800px) {
+  html,
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .meta {
+    border-left: none;
+    border-top: none;
+    margin: auto;
+    padding: 0;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    scroll-snap-align: center;
+  }
+
+  .meta h1,
+  .meta h2,
+  .meta h3 {
+    font-size: 1.5rem;
+    padding: 0;
+    border: none;
+    max-width: 65vw;
+    margin: auto;
+  }
+
+  .meta h1 {
+    margin-top: 40vh;
+  }
+
+  .everything {
+    display: grid;
+    width: 500vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    scroll-snap-type: none;
+    overflow-y: visible;
+  }
+
+  .everthing div {
+  }
+
+  .container {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    scroll-snap-align: center;
+  }
+
+  .context {
+    min-height: 80vh;
+    margin: 5vh;
+    font-size: 0.8rem;
+    scroll-snap-align: center;
+  }
+
+  .context p {
+    margin: 0;
+  }
+}
